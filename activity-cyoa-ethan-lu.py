@@ -15,13 +15,6 @@ def restart_program():
     os.execv(python, ['python'] + sys.argv)
 
 def game():
-    clarity = 0; # represents mental stabiity and self awareness
-    # trust tracks relationships and cooperation
-    trustEcho = 0;
-    trustMarris = 0;
-    trustMirror = 0;
-    trustRyne = 0;
-    fracture = 0; # represents instability, paradox risk, memory corruption
     # Introduction
     time.sleep(0.5)
     print("You wake up in a sterile white room with no windows.")
@@ -102,7 +95,8 @@ def game():
             restart_program()
     else:
         print("Invalid input. Please enter \"YES\" or \"NO\".")
-        invalid = input("Type anything to restart")
+        invalid = input("Type anything to restart ")
+        print(f"Typed {invalid}, restarting game...")
         restart_program()
 
 
