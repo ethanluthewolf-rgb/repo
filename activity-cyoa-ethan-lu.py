@@ -39,69 +39,70 @@ def game():
     if choiceOne == "1":
         print("You enter a room filled with floating orbs. Each one shows glimpses of your possible paths—a soldier, a scientist, a fugitive. One orb pulses stronger than the rest.")
         choiceOneBranch = input("Do you: \n1. Touch the pulsing orb \n2. Break the orb \n3. Ignore all orbs and leave")
+        while choiceOneBranch != "1" and choiceOneBranch != "2" and choiceOneBranch != "3":
+            print("Please type 1, 2, or 3.")
+            choiceOneBranch = input("Do you: \n1. Touch the pulsing orb \n2. Break the orb \n3. Ignore all orbs and leave")
         if choiceOneBranch == "1":
+            # Climax
             print("You touch the orb and you suddenly get teleported to a lab. You become a well-respected scientist there and become the head scientist of the lab experimenting with multiple timelines. ")
+            # Resolution
             print("You have unlocked the ending: \"The Renegade Scientist\"")
             restart = input("Press r to restart game.")
             if restart == "r":
                 print("Restarting program...")
                 restart_program()
         elif choiceOneBranch == "2":
+            # Climax
             print("You erased your past identity and you walk onto a path even you don't know where it leads. ")
+            # Resolution
             print("You have unlocked the ending: \"My Own Path\"")
             restart = input("Press r to restart game.")
             if restart == "r":
                 print("Restarting program...")
                 restart_program()
         elif choiceOneBranch == "3":
+            # Climax
             print("You ignored all the orbs and left, remaining a black state ")
+            # Resolution
             print("You have unlocked the ending: \"My Own Path\"")
             restart = input("Press r to restart game.")
             if restart == "r":
                 print("Restarting program...")
                 restart_program()
-        else:
-            print("Invalid input. Please enter \"YES\" or \"NO\".")
-            invalid = input("Type anything to restart")
-            restart_program()
 
     elif choiceOne == "2":
         print("You're greeted by a woman in a lab coat who calls you \"Commander Vale\"—but you're not sure if she’s lying.")
         choiceTwoBranch = input("Do you: \n1. Pretend to be Commander Vale \n2. Admit you don't remember \n3. Attack her first")
+        while choiceTwoBranch != "1" and choiceTwoBranch != "2" and choiceTwoBranch != "3":
+            print("Please type 1, 2, or 3.")
+            choiceTwoBranch = input("Do you: \n1. Pretend to be Commander Vale \n2. Admit you don't remember \n3. Attack her first")
         if choiceTwoBranch == "1":
+            # Climax
             print("You gain her trust, and you unlock base access, leading to you becoming a scientist working there")
+            # Resolution
             print("You have unlocked the ending: \"The Scientist\"")
             restart = input("Press r to restart game.")
             if restart == "r":
                 print("Restarting program...")
                 restart_program()
         elif choiceTwoBranch == "2":
+            # Climax
             print("She quickly runs and activates a failsafe, and you are arrested in seconds, and then placed into a jail for who knows how long.")
+            # Resolution
             print("You have unlocked the ending: \"Prisoner of Time\"")
             restart = input("Press r to restart game.")
             if restart == "r":
                 print("Restarting program...")
                 restart_program()
         elif choiceTwoBranch == "3":
+            # Climax
             print("You attack her and become violent, becoming an unstable person who walks a dangerous path where you are hunted.")
+            # Resolution
             print("You have unlocked the ending: \"Fractured Mind\"")
             restart = input("Press r to restart game.")
             if restart == "r":
                 print("Restarting program...")
                 restart_program()
-        else:
-            print("Invalid input. Please enter \"YES\" or \"NO\".")
-            invalid = input("Type anything to restart")
-            restart_program()
-    else:
-        print("Invalid input. Please enter \"YES\" or \"NO\".")
-        invalid = input("Type anything to restart ")
-        print(f"Typed {invalid}, restarting game...")
-        restart_program()
-
-
-
-
 
 while True:
     start = input("Start Game? Type YES/NO ").lower()
@@ -118,9 +119,3 @@ while True:
         if invalid == "r":
             print("Restarting program...")
             restart_program()
-
-
-
-# Climax
-
-# Resolution
