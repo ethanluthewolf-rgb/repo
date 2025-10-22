@@ -15,7 +15,7 @@ t.goto(0, -200)
 t.color("brown")
 t.width(10)
 t.shape("arrow")         # leaf shape
-t.speed(100000000)
+t.speed(1000000000000000000)
 
 def draw_tree(level: int, branch_length: float):
     """Draw a tree recursively at a given level
@@ -105,6 +105,22 @@ def draw_rcomplicated_tree(level: int, branch_length: float):
         t.stamp()
         t.color("brown")
 
-draw_rcomplicated_tree(5, 200)
+def factorial(num: int) -> int:
+    """Calculate the factoral of the given number recursively"""
+    if num > 1:
+        return num * factorial(num - 1)
+    else:
+        return 1;
+
+def fibonacci(num: int) -> int:
+    """Returns the nth fibonacci number calculated recursively"""
+    # If the num is > 2
+    if num > 2:
+        return fibonacci(num-1) + fibonacci(num-2)
+    else:
+        return 1
+
+print(fibonacci(5))
+print(fibonacci(20))
 
 wn.exitonclick()
