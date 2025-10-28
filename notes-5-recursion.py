@@ -43,6 +43,11 @@ def draw_tree(level: int, branch_length: float):
         t.stamp()
         t.color("brown")
 
+# Create a dictionary of leab colours
+LEAF_COLOURS = {
+    "spring": "#efc3e60"
+}
+
 def draw_complicated_tree(level: int, branch_length: float):
     """Draw a tree recursively at a given level
     level - the levels of branches
