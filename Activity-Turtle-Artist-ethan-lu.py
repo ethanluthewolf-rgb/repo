@@ -16,8 +16,19 @@ t.left(90)
 t.color("black")
 t.width(5)
 t.fillcolor("darkblue")
+t.speed(1000000000000)
 
 # Starry night with variable star sizes
+
+# Star function
+def drawStar(size: int, color):
+    t.pendown()
+    if color.lower().strip("!.,? ") == "red" or color.lower().strip("!.,? ") == "orange" or color.lower().strip("!.,? ") or "yellow" or color.lower().strip("!.,? ") == "white" or color.lower().strip("!.,? ") == "blue" or color.lower().strip("!.,? ") == "purple":
+        t.fillcolor(color)
+        t.begin_fill()
+        t.setheading(90)
+        t.
+
 
 # Frame
 t.goto(-460, -370)
@@ -52,24 +63,53 @@ t.right(12)
 t.forward(45)
 t.right(167)
 t.forward(60)
-t.left(150)
+t.left(160)
+t.forward(75)
+t.right(85)
+t.forward(10)
+t.left(85)
+t.forward(30)
+t.left(23)
+t.forward(13)
+t.right(20)
+t.forward(150)
+t.right(163)
+t.forward(30)
+t.right(15)
+t.forward(130)
+t.left(45)
+t.forward(35)
+t.right(40)
+t.forward(140)
+t.left(15)
+t.forward(130)
+t.left(15)
+t.forward(20)
+t.left(160)
+t.forward(40)
+t.right(35)
+t.forward(45)
+t.left(180)
+t.forward(20)
+t.left(70)
+t.forward(120)
+t.right(35)
+t.forward(80)
+t.left(35)
+t.forward(60)
+t.right(30)
+t.forward(80)
+t.right(108)
+t.forward(250)
+t.end_fill()
+t.penup()
 
-# Star function
-def drawStar(size: int, color):
-    if color.lower().strip("!.,? ") == "red":
-        t.color("red")
-    elif color.lower().strip("!.,? ") == "orange":
-        t.color("orange")
-    elif color.lower().strip("!.,? ") == "yellow":
-        t.color("yellow")
-    elif color.lower().strip("!.,? ") == "white":
-        t.color("white")
-    elif color.lower().strip("!.,? ") == "blue":
-        t.color("blue")
-    elif color.lower().strip("!.,? ") == "purple":
-        t.color("purple")
-    else:
-        print(f"{color} is not a valid color. Please try red, orange, yellow, white, blue, or purple.")
+# Stars
+t.goto(-390, 340)
+t.pendown()
+drawStar(20, "yellow")
+
+
 
 
 wn.exitonclick()
