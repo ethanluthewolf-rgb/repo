@@ -20,12 +20,12 @@ def main():
             counter += 1
             info = line.split(",")
             if info[1] != "":
-                single_rainfall = float(info[1])
+                # single_rainfall = float(info[1])
             if info[-2] != "":
-                single_min_temp = float(info[-2])
+                # single_min_temp = float(info[-2])
 
-            rainfall += single_rainfall
-            min_temp += single_min_temp
+            # rainfall += single_rainfall
+            # min_temp += single_min_temp
 
 
             # working on june max temps
@@ -33,9 +33,9 @@ def main():
             date = info[0]
             if date[5:7] == "06":
                 if info[-1] != "":
-                    single_max_june_temp = float(info[-1])
+                    # single_max_june_temp = float(info[-1])
 
-            max_june_temp += single_max_june_temp
+            # max_june_temp += single_max_june_temp
 
         rainfall /= counter
         min_temp /= counter

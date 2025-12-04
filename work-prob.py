@@ -12,9 +12,6 @@ def main():
         # fave healthy food
         natures = 0
         chopped = 0
-        subway = 0
-        veggie = 0
-        steves = 0
 
         for line in f:
             # get vote
