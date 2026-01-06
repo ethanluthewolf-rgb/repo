@@ -45,8 +45,8 @@ def game():
         # Draw a circle
         pygame.draw.circle(screen, (255, 255, 0), (WIDTH / 2, HEIGHT / 2), 50)
         pygame.draw.arc(screen, BLACK, (WIDTH/2 - 20, HEIGHT/2, 40, 25), 3.14, 6.28, 3)
-        pygame.draw.arc(screen, BLACK, (WIDTH/2 - 29, HEIGHT/2 - 20, 20, 10), 6.28, 3.14, 3)
-        pygame.draw.arc(screen, BLACK, (WIDTH/2 + 12, HEIGHT/2 - 20, 20, 10), 6.28, 3.14, 3)
+        pygame.draw.arc(screen, BLACK, (WIDTH/2 - 29, HEIGHT/2 - 20, 20, 10), 6.28, 3.14, 4)
+        pygame.draw.arc(screen, BLACK, (WIDTH/2 + 12, HEIGHT/2 - 20, 20, 10), 6.28, 3.14, 4)
         pygame.draw.circle(screen, (240, 50, 110), (WIDTH / 2 - 30, HEIGHT / 2), 10)
         pygame.draw.circle(screen, (240, 50, 110), (WIDTH / 2 + 30, HEIGHT / 2), 10)
         # Update screen
