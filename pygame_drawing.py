@@ -3,7 +3,6 @@
 # Date: Jan 5, 2025
 
 import pygame
-import math
 
 def game():
     pygame.init()
